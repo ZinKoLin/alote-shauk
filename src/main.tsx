@@ -10,6 +10,7 @@ import "./documents.css";
 import "./theme.css";
 import "./readability.css";
 import "./language-controls.css";
+import "./simple-design.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

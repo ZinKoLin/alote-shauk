@@ -9,7 +9,6 @@ import {
   CheckCheck,
   ChevronDown,
   CircleHelp,
-  FileCheck2,
   FilePenLine,
   FileText,
   GraduationCap,
@@ -27,7 +26,6 @@ import {
   Printer,
   RotateCcw,
   Settings2,
-  ShieldCheck,
   Sparkles,
   Trash2,
   Upload,
@@ -113,7 +111,6 @@ function Logo({ compact = false }: { compact?: boolean }) {
           {t("အလုပ်လျှောက်")}
           <span className="brand-dot">.</span>
         </strong>
-        {!compact && <span>{t("သင့်အခွင့်အလမ်းရဲ့ အစ")}</span>}
       </div>
     </div>
   );
@@ -661,26 +658,10 @@ function Workspace() {
           </button>
         </div>
         <div className="sidebar-bottom">
-          <div className="privacy-note">
-            <span className="privacy-icon">
-              <ShieldCheck size={20} strokeWidth={1.5} />
-            </span>
-            <div>
-              <strong>{t("သင့်အချက်အလက်၊ သင့်ဆီမှာပဲ")}</strong>
-              <p>{t("ဒီ browser ထဲမှာပဲ ယာယီသိမ်းပါတယ်။")}</p>
-            </div>
-          </div>
           <button className="privacy-link" onClick={() => setModal("privacy")}>
             {t("သိမ်းဆည်းပုံကို လေ့လာရန်")}
             <ArrowRight size={13} />
           </button>
-          <div className="sidebar-foot">
-            <span>{t("ရိုးရိုးလေးနဲ့ အဆင်သင့်။")}</span>
-            <span>
-              {t("အလုပ်လျှောက် ©")}
-              {new Date().getFullYear()}
-            </span>
-          </div>
         </div>
       </aside>
 
@@ -745,29 +726,16 @@ function Workspace() {
           />
           <section className="intro">
             <div>
-              <div className="eyebrow">
-                <span />
-                {t("သင့်အလုပ်အကိုင်ခရီးရဲ့ ပထမခြေလှမ်း")}
-              </div>
               <h1>
-                {t("အခွင့်အလမ်းသစ်အတွက်")}
-                <span>{t("အဆင်သင့်ဖြစ်ပါစေ။")}</span>
+                {language === "en"
+                  ? "Create your CV"
+                  : "ကိုယ်ရေးအကျဉ်း ဖန်တီးရန်"}
               </h1>
               <p>
-                {t(
-                  "သင့်အကြောင်း ဖြည့်စွက်ပါ။ သပ်ရပ်တဲ့ ကိုယ်ရေးအကျဉ်းတစ်စောင် ဖန်တီးလိုက်ပါ။",
-                )}
+                {language === "en"
+                  ? "Fill in your details, check the preview and download your PDF."
+                  : "အချက်အလက်ဖြည့်ပါ၊ နမူနာကြည့်ပြီး PDF ထုတ်ယူပါ။"}
               </p>
-            </div>
-            <div className="intro-note">
-              <span className="intro-note-icon">
-                <FileCheck2 size={24} strokeWidth={1.3} />
-              </span>
-              <span>
-                {t("အကောင့်မလိုပါ။")}
-                <br />
-                <strong>{t("အခမဲ့ အသုံးပြုနိုင်ပါတယ်။")}</strong>
-              </span>
             </div>
           </section>
 

@@ -56,7 +56,7 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
       .querySelector('meta[name="theme-color"]')
       ?.setAttribute(
         "content",
-        resolvedTheme === "dark" ? "#17241d" : "#244b40",
+        resolvedTheme === "dark" ? "#15191b" : "#ffffff",
       );
     try {
       localStorage.setItem(PREFERENCES_KEY, JSON.stringify(preferences));

@@ -113,11 +113,6 @@ export default function LanguageToolbar({
           <ChevronDown size={17} aria-hidden="true" />
         </div>
       </div>
-      <p>
-        {en
-          ? "Website language changes the menus. CV language changes the document headings. Your entered details stay unchanged."
-          : "Website ဘာသာစကားက menu တွေကို ပြောင်းပေးပါတယ်။ CV ဘာသာစကားက စာရွက်ထဲက ခေါင်းစဉ်တွေကို ပြောင်းပေးပြီး ဖြည့်ထားတဲ့ဒေတာတွေ မပြောင်းပါ။"}
-      </p>
     </section>
   );
 }

@@ -1,0 +1,473 @@
+/* Quiet workspace styling; document and print layouts retain their own styles. */
+@media screen {
+  html[lang][data-theme] {
+    --ui-background: #f7f8f9;
+    --ui-surface: #fff;
+    --ui-text: #242b2e;
+    --ui-muted: #606b70;
+    --ui-border: #dce2e5;
+    --ui-soft: #f1f4f3;
+    --ui-accent: #275d50;
+    --ui-active: #eaf2ef;
+    --green: #275d50;
+    --green-dark: #1b463b;
+    --border: var(--ui-border);
+    background: var(--ui-background);
+    color: var(--ui-text);
+  }
+  html[data-theme="dark"][lang] {
+    --ui-background: #15191b;
+    --ui-surface: #1d2225;
+    --ui-text: #edf0f1;
+    --ui-muted: #abb4b8;
+    --ui-border: #3a444a;
+    --ui-soft: #242c2f;
+    --ui-accent: #a3d2c0;
+    --ui-active: #293e36;
+  }
+  html[lang][data-theme] :is(body, .main-content) {
+    background: var(--ui-background);
+    color: var(--ui-text);
+  }
+  html[lang][data-theme]
+    :is(.sidebar, .topbar, .form-card, .dialog, .privacy-consent-dialog) {
+    background: var(--ui-surface);
+    border-color: var(--ui-border);
+    color: var(--ui-text);
+    box-shadow: none;
+  }
+  html[lang][data-theme] .sidebar {
+    width: 248px;
+  }
+  html[lang][data-theme] .main-content {
+    margin-left: 248px;
+    width: calc(100% - 248px);
+  }
+  html[lang][data-theme] .brand {
+    padding: 30px 22px;
+    gap: 10px;
+  }
+  html[lang][data-theme] .brand-mark {
+    transform: none;
+    width: 35px;
+    height: 38px;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--ui-accent);
+    box-shadow: none;
+  }
+  html[lang][data-theme]
+    :is(
+      .brand strong,
+      .intro h1,
+      .form-card h2,
+      .field label,
+      .breadcrumb strong,
+      .settings-section h3,
+      .settings-section label
+    ) {
+    color: var(--ui-text);
+  }
+  html[lang][data-theme] .brand strong {
+    font-size: 21px;
+  }
+  html[lang][data-theme] .workspace-label {
+    margin-bottom: 12px;
+    color: var(--ui-muted);
+  }
+  html[lang][data-theme] .step-nav {
+    gap: 4px;
+  }
+  html[lang][data-theme] .step-link {
+    min-height: 52px;
+    border-radius: 6px;
+    color: var(--ui-muted);
+    font-size: 14px;
+  }
+  html[lang][data-theme] .step-link.active {
+    background: var(--ui-active);
+    border-color: transparent;
+    color: var(--ui-accent);
+  }
+  html[lang][data-theme] .step-link:hover:not(.active) {
+    background: var(--ui-soft);
+  }
+  html[lang][data-theme]
+    :is(.step-icon, .step-number, .privacy-link, .sample-button) {
+    color: var(--ui-muted);
+  }
+  html[lang][data-theme] .sidebar-divider {
+    margin: 16px 12px;
+    background: var(--ui-border);
+  }
+  html[lang][data-theme] .progress-card {
+    margin: 24px 10px 12px;
+    padding: 16px 0 0;
+    border: 0;
+    border-top: 1px solid var(--ui-border);
+    border-radius: 0;
+    background: transparent;
+    color: var(--ui-text);
+  }
+  html[lang][data-theme] .progress-label strong {
+    color: var(--ui-accent);
+    font-size: 20px;
+  }
+  html[lang][data-theme] .progress-track {
+    height: 4px;
+    background: var(--ui-border);
+  }
+  html[lang][data-theme] .progress-track > div {
+    background: var(--ui-accent);
+  }
+  html[lang][data-theme] .sidebar-bottom {
+    padding-bottom: 20px;
+  }
+  html[lang][data-theme] .topbar {
+    min-height: 72px;
+    padding: 14px 28px;
+    backdrop-filter: none;
+  }
+  html[lang][data-theme] .topbar .icon-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  html[lang][data-theme] .page-content {
+    padding: 24px 28px 0;
+    max-width: 1500px;
+  }
+  html[lang][data-theme] .language-toolbar {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--ui-border);
+    border-radius: 0;
+    padding: 0 0 20px;
+    margin-bottom: 24px;
+    gap: 16px 28px;
+  }
+  html[lang][data-theme] .language-control {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 12px;
+    align-items: center;
+  }
+  html[lang][data-theme] .language-control > :is(h2, label) {
+    font-size: 14px;
+    margin: 0;
+  }
+  html[lang][data-theme] .language-control > :is(h2, label) > svg {
+    display: none;
+  }
+  html[lang][data-theme] .website-language-picker > button {
+    font-size: 14px;
+    gap: 6px;
+    padding: 7px 9px;
+    background: var(--ui-surface);
+    transition: none;
+  }
+  html[lang][data-theme]
+    .website-language-picker
+    > button[aria-pressed="true"] {
+    border-color: var(--ui-accent);
+    background: var(--ui-active);
+    color: var(--ui-accent);
+    box-shadow: none;
+  }
+  html[lang][data-theme] .language-flag {
+    width: 24px;
+    height: 16px;
+  }
+  html[lang][data-theme] .intro {
+    margin-bottom: 24px;
+  }
+  html[lang][data-theme] .intro h1 {
+    font-size: 24px;
+    line-height: 1.7;
+    letter-spacing: 0;
+  }
+  html[lang][data-theme] .intro p {
+    color: var(--ui-muted);
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  html[lang][data-theme] .builder-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+    gap: 24px;
+  }
+  html[lang][data-theme] .form-card {
+    padding: 24px 24px 0;
+    border-radius: 8px;
+  }
+  html[lang][data-theme] .form-card-header {
+    margin-bottom: 10px;
+  }
+  html[lang][data-theme] .section-badge {
+    background: none;
+    color: var(--ui-muted);
+    border-radius: 0;
+    width: 24px;
+    height: 24px;
+  }
+  html[lang][data-theme]
+    :is(
+      .step-counter,
+      .section-description,
+      .field-hint,
+      .optional-note,
+      .upload-copy > span,
+      .preview-bottom,
+      .preview-hint,
+      .progress-card p,
+      .editor-foot,
+      .editor-foot > button,
+      .save-status,
+      .breadcrumb,
+      .document-group > p,
+      .document-item-details > span,
+      .document-file-note,
+      .checkbox-row small
+    ) {
+    color: var(--ui-muted);
+  }
+  html[lang][data-theme]
+    :is(
+      .photo-upload,
+      .contact-illustration,
+      .paper-settings,
+      .document-summary,
+      .document-item,
+      .document-upload
+    ) {
+    background: var(--ui-soft);
+    border-color: var(--ui-border);
+    border-radius: 6px;
+    color: var(--ui-text);
+  }
+  html[lang][data-theme] .photo-upload {
+    border: 0;
+  }
+  html[lang][data-theme]
+    :is(
+      .field input,
+      .field select,
+      .field textarea,
+      .document-item-details > select
+    ) {
+    background: var(--ui-surface);
+    border-color: var(--ui-border);
+    color: var(--ui-text);
+    border-radius: 6px;
+  }
+  html[lang][data-theme]
+    :is(.field input::placeholder, .field textarea::placeholder) {
+    color: var(--ui-muted);
+    opacity: 1;
+  }
+  html[lang][data-theme]
+    :is(
+      .field input,
+      .field textarea,
+      .field select,
+      .cv-language-select > select
+    ):focus {
+    border-color: var(--ui-accent);
+    outline: 2px solid var(--ui-accent);
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+  html[lang][data-theme] .primary-button {
+    background: var(--ui-accent);
+    border-color: var(--ui-accent);
+    color: var(--ui-surface);
+    box-shadow: none;
+  }
+  html[lang][data-theme] .primary-button:hover:not(:disabled) {
+    filter: brightness(0.92);
+    box-shadow: none;
+  }
+  html[lang][data-theme]
+    :is(
+      .secondary-button,
+      .small-button,
+      .back-button,
+      .icon-button,
+      .next-button,
+      .preview-label h2,
+      .preview-actions .icon-button,
+      .zoom-controls > button,
+      .zoom-controls > span
+    ) {
+    color: var(--ui-text);
+  }
+  html[lang][data-theme] :is(.secondary-button, .small-button) {
+    border-color: var(--ui-border);
+    background: var(--ui-surface);
+  }
+  html[lang][data-theme] .next-button {
+    background: var(--ui-active);
+    color: var(--ui-accent);
+    border-color: var(--ui-border);
+  }
+  html[lang][data-theme] .preview-canvas {
+    background: var(--ui-soft);
+    border-color: var(--ui-border);
+    border-radius: 8px;
+  }
+  html[lang][data-theme] .live-dot {
+    box-shadow: none;
+    background: var(--ui-accent);
+  }
+  html[lang][data-theme] .a4-badge {
+    color: var(--ui-muted);
+    border-color: var(--ui-border);
+  }
+  html[lang][data-theme] .preview-actions .icon-button,
+  html[lang][data-theme] .zoom-controls > button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  html[lang][data-theme] .page-footer.site-footer {
+    margin: 28px 0 0;
+    padding: 20px 0;
+    border: 0;
+    border-top: 1px solid var(--ui-border);
+    border-radius: 0;
+    background: transparent;
+    gap: 12px 24px;
+  }
+  html[lang][data-theme] .site-footer-credit {
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+  }
+  html[lang][data-theme] .site-footer-credit > strong {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+  html[lang][data-theme] .site-footer-links {
+    gap: 6px 20px;
+  }
+  html[lang][data-theme] .privacy-consent-dialog,
+  html[lang][data-theme] .dialog {
+    border-radius: 10px;
+  }
+  html[lang][data-theme] .privacy-detail-primary {
+    background: var(--ui-soft);
+    border-color: var(--ui-border);
+  }
+  html[lang][data-theme]
+    :is(
+      .privacy-detail h3,
+      .privacy-detail-primary h3,
+      .privacy-consent-dialog h1
+    ) {
+    color: var(--ui-text);
+  }
+  html[lang][data-theme]
+    :is(.privacy-detail p, .consent-description, .consent-footer) {
+    color: var(--ui-muted);
+  }
+  html[lang][data-theme] :is(.consent-shield, .consent-brand > svg) {
+    background: var(--ui-soft);
+    color: var(--ui-accent);
+  }
+}
+@media screen and (max-width: 1200px) {
+  html[lang][data-theme] .language-control {
+    display: block;
+  }
+  html[lang][data-theme] .language-control > :is(h2, label) {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  html[lang][data-theme] .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+  html[lang][data-theme] .mobile-logo .brand {
+    padding: 0;
+  }
+  html[lang][data-theme] .mobile-step-nav > button {
+    color: var(--ui-muted);
+    border-radius: 5px;
+  }
+  html[lang][data-theme] .mobile-step-nav > button.active {
+    background: var(--ui-active);
+    color: var(--ui-accent);
+    border-color: transparent;
+  }
+}
+@media screen and (max-width: 760px) {
+  html[lang][data-theme] .topbar {
+    padding: 10px 16px;
+    min-height: 68px;
+  }
+  html[lang][data-theme] .page-content {
+    padding: 20px 16px 0;
+  }
+  html[lang][data-theme] .brand.compact strong {
+    font-size: 18px;
+  }
+  html[lang][data-theme] .brand.compact .brand-mark {
+    width: 26px;
+    height: 32px;
+  }
+  html[lang][data-theme] .builder-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  html[lang][data-theme] .form-card {
+    padding: 22px 20px 0;
+  }
+  html[lang][data-theme] .mobile-view-tabs {
+    padding: 4px;
+    border: 1px solid var(--ui-border);
+    border-radius: 6px;
+    background: var(--ui-soft);
+  }
+  html[lang][data-theme] .mobile-view-tabs > button {
+    color: var(--ui-muted);
+    border-radius: 4px;
+  }
+  html[lang][data-theme] .mobile-view-tabs > button.active {
+    background: var(--ui-surface);
+    color: var(--ui-text);
+    box-shadow: none;
+  }
+  html[lang][data-theme] .mobile-view-tabs > button > span {
+    background: var(--ui-soft);
+    color: var(--ui-text);
+  }
+  html[lang][data-theme] .page-footer.site-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  html[lang][data-theme] .site-footer-links {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 4px 18px;
+  }
+}
+@media screen and (max-width: 640px) {
+  html[lang][data-theme] .language-toolbar {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  html[lang][data-theme] .language-control {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 10px;
+  }
+  html[lang][data-theme] .language-control > :is(h2, label) {
+    margin: 0;
+  }
+  html[lang][data-theme] .language-toolbar .website-language-picker > button {
+    padding: 7px;
+  }
+  html[lang][data-theme] .intro h1 {
+    font-size: 23px;
+  }
+}
