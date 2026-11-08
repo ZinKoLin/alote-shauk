@@ -1,4 +1,4 @@
-import { FilePenLine, ShieldCheck } from "lucide-react";
+import { ExternalLink, FilePenLine, ShieldCheck } from "lucide-react";
 import { useSettings } from "./SettingsContext";
 
 export default function SiteFooter({ onPrivacy }: { onPrivacy: () => void }) {
@@ -25,10 +25,20 @@ export default function SiteFooter({ onPrivacy }: { onPrivacy: () => void }) {
         <span>Developed by</span>
         <strong>ZinKoLyn</strong>
       </div>
-      <button type="button" onClick={onPrivacy}>
-        <ShieldCheck size={17} />
-        {language === "en" ? "Privacy" : "ကိုယ်ရေးအချက်အလက် လုံခြုံမှု"}
-      </button>
+      <div className="site-footer-links">
+        <a
+          href="https://github.com/ZinKoLin/alote-shauk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ExternalLink size={17} aria-hidden="true" />
+          GitHub repository
+        </a>
+        <button type="button" onClick={onPrivacy}>
+          <ShieldCheck size={17} />
+          {language === "en" ? "Privacy" : "ကိုယ်ရေးအချက်အလက် လုံခြုံမှု"}
+        </button>
+      </div>
     </footer>
   );
 }

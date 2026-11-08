@@ -159,14 +159,32 @@ html[lang] .site-footer-credit > strong {
   letter-spacing: -0.5px;
   color: var(--ui-text);
 }
-html[lang] .site-footer > button {
+.site-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 20px;
+}
+html[lang] .site-footer-links > :is(a, button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 5px 0;
+  border: 0;
+  background: transparent;
   color: var(--ui-text);
   font-size: 13px;
   gap: 7px;
   max-width: 100%;
   white-space: normal;
+  text-decoration: none;
 }
-.site-footer > button > svg {
+.site-footer-links > :is(a, button):hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.site-footer-links > :is(a, button) > svg {
   flex-shrink: 0;
 }
 @media (max-width: 640px) {
@@ -220,6 +238,9 @@ html[lang] .site-footer > button {
   }
   .site-footer-brand > div {
     justify-content: center;
+  }
+  .site-footer-links {
+    flex-direction: column;
   }
 }
 @media print {
