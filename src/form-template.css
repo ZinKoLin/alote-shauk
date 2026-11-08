@@ -1,0 +1,327 @@
+/* The bordered Myanmar application form follows the supplied paper reference. */
+.template-form {
+  padding: 48px 66px 64px;
+}
+
+.template-form::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1px solid #31352f;
+  pointer-events: none;
+}
+
+.template-form .cv-header {
+  height: 170px;
+  justify-content: flex-end;
+}
+
+.template-form .cv-heading {
+  position: absolute;
+  inset: 13px 0 auto;
+  margin: 0;
+  align-self: auto;
+  text-align: center;
+}
+
+.template-form .cv-heading h2 {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.9;
+}
+
+.template-form .cv-photo {
+  margin-top: 17px;
+  width: 124px;
+  height: 132px;
+  border: 1px solid #646b60;
+  background: #fff;
+  color: #b3bbaa;
+}
+
+.template-form .cv-photo.has-photo {
+  border: 0;
+}
+
+.template-form .cv-photo > svg,
+.template-form .cv-photo > small {
+  display: none;
+}
+
+.template-form .cv-photo > span {
+  color: #444a3f;
+  font-size: 16px;
+}
+
+.template-form .cv-row {
+  grid-template-columns: 242px 23px minmax(0, 1fr);
+  font-size: 16px;
+  line-height: 1.85;
+  min-height: 37px;
+  padding: 3px 0;
+}
+
+.template-form .cv-label {
+  padding-right: 7px;
+}
+
+.template-form .cv-separator {
+  line-height: 29.6px;
+}
+
+.template-form .cv-value.is-empty {
+  max-width: 354px;
+}
+
+.cv-blank-lines {
+  display: none;
+}
+.template-form .empty-dash {
+  display: none;
+}
+.template-form .cv-blank-lines {
+  display: block;
+  width: 100%;
+}
+.template-form .cv-blank-lines i {
+  display: none;
+  height: 37px;
+  border-bottom: 1px dotted #6e7468;
+}
+.template-form .cv-blank-lines i:first-child {
+  display: block;
+  height: 29px;
+}
+.template-form [data-row-id="skills"] .cv-blank-lines i:nth-child(2),
+.template-form [data-row-id="address"] .cv-blank-lines i:nth-child(2),
+.template-form [data-row-id="experience"] .cv-blank-lines i {
+  display: block;
+}
+
+.template-form [data-row-id="skills"]:has(.is-empty) {
+  min-height: 74px;
+}
+
+.template-form [data-row-id="experience"]:has(.is-empty) {
+  min-height: 111px;
+}
+
+.template-form [data-row-id="address"]:has(.is-empty) {
+  min-height: 74px;
+}
+
+.template-form .cv-continued {
+  margin-top: 5px;
+  padding-left: 66px;
+  text-align: left;
+  font-size: 11px;
+}
+
+.template-options {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 11px;
+}
+
+.template-option {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.template-option.selected {
+  padding-left: 9.5px;
+  padding-right: 9.5px;
+}
+
+.mini-document {
+  padding: 15px 9px;
+}
+
+.mini-form {
+  border: 1px solid #99a58c;
+}
+
+.mini-form .mini-heading > i {
+  width: 50%;
+  border-bottom: 0;
+  margin-left: 15%;
+}
+
+.mini-form .mini-lines b {
+  background: none;
+  height: 2px;
+  border-bottom: 1px dotted #a7b49a;
+}
+
+/* Comfortable Burmese text sizes and contrast at normal browser zoom. */
+.intro p,
+.section-description,
+.field-hint,
+.optional-note,
+.editor-foot,
+.editor-foot > button,
+.preview-bottom,
+.preview-hint,
+.page-footer,
+.page-footer > button,
+.save-status,
+.eyebrow {
+  color: #737e69;
+}
+
+.workspace-label,
+.sidebar-foot,
+.sidebar-foot > span:last-child,
+.privacy-note p,
+.upload-copy > span,
+.progress-card p,
+.breadcrumb {
+  color: #73806a;
+}
+
+.step-link {
+  font-size: 11px;
+}
+.field label {
+  font-size: 11px;
+}
+.field input,
+.field select,
+.field textarea {
+  font-size: 12px;
+}
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #829075;
+  font-size: 11px;
+}
+.field input[type="date"] {
+  font-size: 11px;
+}
+.field select {
+  color: #829075;
+}
+.section-description,
+.intro p {
+  font-size: 11px;
+}
+.field-hint,
+.optional-note {
+  font-size: 9px;
+}
+.primary-button,
+.back-button,
+.next-button {
+  font-size: 11px;
+}
+.upload-copy > strong {
+  font-size: 12px;
+}
+.upload-copy > span {
+  font-size: 9px;
+}
+.small-button {
+  font-size: 10px;
+  min-height: 34px;
+}
+.preview-label h2 {
+  font-size: 11px;
+}
+.template-caption {
+  font-size: 10px;
+}
+.sample-button {
+  font-size: 11px;
+}
+.contact-illustration > span {
+  font-size: 10px;
+}
+.checkbox-row {
+  font-size: 10px;
+}
+.checkbox-row small {
+  color: #73806a;
+}
+.dialog-feature > p,
+.confirm-copy,
+.help-steps p {
+  color: #69785e;
+}
+
+@media (max-width: 1250px) and (min-width: 761px) {
+  .step-link {
+    font-size: 9px;
+  }
+  .field label {
+    font-size: 10px;
+  }
+  .sample-button {
+    font-size: 9px;
+  }
+  .intro p,
+  .section-description {
+    font-size: 10px;
+  }
+  .template-options {
+    gap: 7px;
+  }
+  .template-option {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .template-option.selected {
+    padding-left: 6.5px;
+    padding-right: 6.5px;
+  }
+  .template-caption {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 760px) {
+  .small-button,
+  .remove-photo,
+  .download-button,
+  .mobile-view-tabs > button,
+  .mobile-step-nav > button,
+  .preview-actions .icon-button,
+  .zoom-controls > button {
+    min-height: 44px;
+  }
+  .remove-photo,
+  .preview-actions .icon-button,
+  .zoom-controls > button {
+    min-width: 44px;
+  }
+  .field input,
+  .field select,
+  .field textarea {
+    font-size: 16px;
+  }
+  .field input[type="date"] {
+    font-size: 13px;
+  }
+  .field label {
+    font-size: 12px;
+  }
+  .intro p {
+    font-size: 11px;
+  }
+  .section-description {
+    font-size: 11px;
+  }
+  .mobile-step-nav > button {
+    font-size: 10px;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  .mobile-view-tabs > button {
+    font-size: 11px;
+  }
+  .editor-foot > span {
+    font-size: 8px;
+  }
+  .template-caption {
+    font-size: 10px;
+  }
+}

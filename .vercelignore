@@ -1,0 +1,13 @@
+.npm-cache/
+.agents/
+.tools/
+.git/
+.vercel/
+.env*
+node_modules/
+test-results/
+playwright-report/
+tests/
+playwright.config.ts
+*.tsbuildinfo
+dist/

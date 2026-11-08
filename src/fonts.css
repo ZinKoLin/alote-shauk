@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Pyidaungsu";
+  src: url("/fonts/Pyidaungsu-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pyidaungsu";
+  src: url("/fonts/Pyidaungsu-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600 900;
+  font-display: swap;
+}

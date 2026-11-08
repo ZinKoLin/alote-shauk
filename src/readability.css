@@ -1,0 +1,588 @@
+/* Readable text sizes across both languages. CV paper uses its own physical scale. */
+html[lang] body {
+  font-size: 16px;
+}
+html[lang] .intro h1 {
+  font-size: 28px;
+}
+html[lang] .form-card h2,
+html[lang] .dialog-heading h2 {
+  font-size: 20px;
+}
+html[lang] .brand > div > span {
+  font-size: 12px;
+  line-height: 1.8;
+}
+html[lang]
+  :is(
+    .breadcrumb,
+    .workspace-label,
+    .progress-label,
+    .progress-label small,
+    .step-counter,
+    .step-counter > span,
+    .step-number,
+    .save-status,
+    .eyebrow,
+    .intro-note,
+    .intro-note strong,
+    .intro-note > span,
+    .upload-copy > span,
+    .field-hint,
+    .optional-note,
+    .editor-foot,
+    .editor-foot > span,
+    .editor-foot > button,
+    .preview-bottom,
+    .preview-hint,
+    .page-footer,
+    .page-footer > span,
+    .page-footer > button,
+    .footer-credit,
+    .sidebar-foot,
+    .sidebar-foot > span:last-child,
+    .privacy-note strong,
+    .privacy-note p,
+    .privacy-link,
+    .progress-card p,
+    .zoom-controls > span,
+    .checkbox-row small,
+    .paper-settings span,
+    .document-file-note,
+    .document-item-details > span,
+    .consent-footer,
+    .consent-footer > span:last-child
+  ) {
+  font-size: 12px;
+  line-height: 1.9;
+}
+html[lang]
+  :is(
+    .step-link,
+    .sample-button,
+    .back-button,
+    .next-button,
+    .primary-button,
+    .secondary-button,
+    .small-button,
+    .template-caption,
+    .preview-label h2,
+    .design-label,
+    .subsection-label,
+    .contact-illustration > span,
+    .checkbox-row,
+    .paper-settings strong,
+    .document-upload,
+    .document-item-details > strong,
+    .document-item-details > select,
+    .document-group > p,
+    .document-summary strong,
+    .document-summary span,
+    .document-group-title > span,
+    .nrc-upload-slots label,
+    .document-storage-warning,
+    .settings-section > p,
+    .theme-options > button,
+    .settings-footer,
+    .settings-footer > button,
+    .locale-switch > button,
+    .privacy-detail p,
+    .privacy-detail a,
+    .consent-description,
+    .consent-checkbox,
+    .consent-actions > button,
+    .consent-declined,
+    .confirm-copy,
+    .help-steps p
+  ) {
+  font-size: 14px;
+  line-height: 1.9;
+}
+html[lang]
+  :is(
+    .field > label,
+    .birthday-field > legend,
+    .settings-section h3,
+    .settings-section > label,
+    .privacy-detail h3,
+    .help-steps strong,
+    .document-group h3,
+    .upload-copy > strong
+  ) {
+  font-size: 15px;
+  line-height: 1.9;
+}
+html[lang]
+  :is(
+    .field input,
+    .field select,
+    .field textarea,
+    .settings-section > select
+  ) {
+  font-size: 16px;
+  min-height: 48px;
+  line-height: 1.8;
+}
+html[lang] :is(.field input::placeholder, .field textarea::placeholder) {
+  font-size: 14px;
+}
+html[lang] .field input[type="date"] {
+  font-size: 16px;
+}
+html[lang] .select-wrap > svg {
+  top: 17px;
+}
+html[lang] .fields-grid {
+  gap: 22px 16px;
+}
+html[lang] .form-card {
+  padding: 26px 26px 0;
+}
+html[lang] .section-description,
+html[lang] .intro p {
+  font-size: 14px;
+  line-height: 2;
+}
+html[lang] .section-description {
+  margin-bottom: 24px;
+}
+html[lang]
+  :is(
+    .primary-button,
+    .secondary-button,
+    .back-button,
+    .next-button,
+    .small-button,
+    .page-footer > button,
+    .editor-foot > button,
+    .sample-button,
+    .privacy-link,
+    .settings-footer > button,
+    .locale-switch > button,
+    .zoom-controls > button
+  ) {
+  min-height: 44px;
+}
+html[lang] .zoom-controls > button {
+  min-width: 36px;
+}
+html[lang] .a4-badge {
+  font-size: 11px;
+}
+html[lang] .sidebar {
+  width: 272px;
+}
+html[lang] .main-content {
+  margin-left: 272px;
+  width: calc(100% - 272px);
+}
+html[lang] .step-link {
+  white-space: normal;
+  min-height: 58px;
+  gap: 9px;
+}
+html[lang] .step-link > span:nth-child(2) {
+  min-width: 0;
+}
+html[lang] .step-number {
+  flex-shrink: 0;
+}
+html[lang] .privacy-note strong,
+html[lang] .privacy-note p {
+  white-space: normal;
+}
+html[lang] .sidebar-content {
+  padding: 0 15px;
+}
+html[lang] .sidebar-foot {
+  gap: 8px;
+}
+html[lang] .topbar-actions {
+  gap: 10px;
+}
+html[lang] .save-status {
+  max-width: 165px;
+  white-space: normal;
+}
+html[lang] .brand {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+html[lang] .mobile-logo .brand {
+  padding: 0;
+}
+html[lang] .photo-upload {
+  gap: 17px;
+  padding: 17px;
+}
+html[lang] .upload-copy > span {
+  margin-top: 5px;
+  margin-bottom: 9px;
+}
+html[lang] .privacy-consent-dialog {
+  padding: 29px 30px 25px;
+}
+html[lang] .privacy-consent-dialog h1 {
+  font-size: 27px;
+}
+html[lang] .privacy-detail {
+  margin-bottom: 25px;
+  gap: 14px;
+}
+html[lang] .privacy-detail h3 {
+  margin-bottom: 7px;
+}
+html[lang] .privacy-detail p {
+  line-height: 2;
+}
+html[lang] .consent-top {
+  flex-wrap: wrap;
+}
+html[lang] .consent-tools {
+  margin-left: auto;
+}
+html[lang] .consent-footer {
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+html[lang] .consent-actions {
+  flex-wrap: wrap;
+}
+html[lang] .help-steps li > span {
+  font-size: 13px;
+}
+html[lang] .document-item {
+  gap: 14px;
+}
+html[lang] .document-item-details > strong {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+html[lang] .document-item-details > select {
+  max-width: 190px;
+}
+html[lang] .document-group > p {
+  line-height: 2;
+}
+html[lang] .settings-section > p {
+  line-height: 2;
+}
+html[lang] .settings-section {
+  margin-bottom: 29px;
+}
+html[lang] .settings-footer {
+  flex-wrap: wrap;
+}
+
+.birthday-field {
+  min-inline-size: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.birthday-field > legend {
+  padding: 0;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: var(--ui-text);
+}
+.birthday-parts {
+  display: grid;
+  grid-template-columns: minmax(65px, 0.8fr) minmax(0, 1.5fr) minmax(
+      85px,
+      1.05fr
+    );
+  gap: 10px;
+  width: 100%;
+}
+.birthday-part {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+html[lang] .birthday-part > label {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--ui-muted);
+}
+html[lang] .birthday-part select {
+  padding: 10px 26px 10px 11px;
+}
+.birthday-help {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+.birthday-help .field-hint {
+  margin-top: 0;
+}
+.birthday-notice {
+  color: #95703b;
+}
+html[data-theme="dark"] .birthday-notice {
+  color: #dbb77d;
+}
+.birthday-clear {
+  flex-shrink: 0;
+  min-height: 44px;
+  border: 0;
+  border-radius: 5px;
+  background: none;
+  color: var(--ui-muted);
+  font-size: 12px;
+  padding: 4px 0 4px 8px;
+}
+.birthday-clear:hover {
+  color: var(--ui-text);
+  text-decoration: underline;
+}
+
+/* Slightly larger document text without enlarging photos or the A4 paper. */
+.cv-sheet .cv-row {
+  font-size: 14px;
+}
+.cv-sheet.template-modern .cv-row {
+  font-size: 13.5px;
+}
+.cv-sheet.template-form .cv-row {
+  font-size: 17px;
+}
+.cv-sheet.cv-english .cv-row {
+  font-size: 14px;
+}
+.cv-sheet.template-form.cv-english .cv-row {
+  font-size: 15px;
+}
+.cv-sheet .cv-section-heading {
+  font-size: 14px;
+}
+.cv-sheet .cv-page-number {
+  font-size: 11px;
+}
+
+@media (max-width: 1200px) {
+  html[lang] .sidebar {
+    width: 250px;
+  }
+  html[lang] .main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+  }
+  html[lang] .step-link {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1050px) {
+  html[lang] .sidebar {
+    display: none;
+  }
+  html[lang] .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+  html[lang] .mobile-logo {
+    display: block;
+  }
+  html[lang] .mobile-logo .brand {
+    gap: 8px;
+  }
+  html[lang] .breadcrumb {
+    display: none;
+  }
+  html[lang] .mobile-step-nav {
+    display: flex;
+    overflow-x: auto;
+    gap: 7px;
+    padding: 0 0 16px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid var(--ui-border);
+    scrollbar-width: thin;
+  }
+  html[lang] .mobile-step-nav > button {
+    flex-shrink: 0;
+    min-height: 48px;
+    padding: 9px 13px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background: none;
+    font-size: 13px;
+    gap: 7px;
+    color: var(--ui-muted);
+  }
+  html[lang] .mobile-step-nav > button > span {
+    font:
+      12px "Inter Variable",
+      sans-serif;
+  }
+  html[lang] .mobile-step-nav > button.active {
+    background: #eaf0e3;
+    border-color: #dfe7d6;
+    color: #567244;
+  }
+  html[data-theme="dark"][lang] .mobile-step-nav > button.active {
+    background: #30472d;
+    border-color: #49623c;
+    color: #d8e9cc;
+  }
+  html[lang] .builder-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 22px;
+  }
+  html[lang] .intro h1 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 760px) {
+  html[lang] .topbar {
+    padding: 12px 16px;
+    gap: 8px;
+  }
+  html[lang] .topbar-actions {
+    gap: 5px;
+  }
+  html[lang] .download-button {
+    font-size: 12px;
+    padding: 9px 12px;
+  }
+  html[lang] .brand.compact strong {
+    font-size: 18px;
+  }
+  html[lang] .page-content {
+    padding: 24px 18px 0;
+  }
+  html[lang] .intro h1 {
+    font-size: 25px;
+  }
+  html[lang] .intro p {
+    font-size: 14px;
+  }
+  html[lang] .intro {
+    margin-bottom: 25px;
+  }
+  html[lang] .form-card {
+    padding: 24px 21px 0;
+  }
+  html[lang] .form-card h2 {
+    font-size: 21px;
+  }
+  html[lang] .mobile-view-tabs > button {
+    min-height: 46px;
+    font-size: 14px;
+  }
+  html[lang] .fields-grid {
+    gap: 23px 13px;
+  }
+  html[lang] .field-hint,
+  html[lang] .optional-note {
+    font-size: 13px;
+  }
+  html[lang] .birthday-part select {
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 22px;
+  }
+  .birthday-parts {
+    gap: 8px;
+  }
+  .birthday-help {
+    flex-wrap: wrap;
+  }
+  .birthday-clear {
+    margin-left: auto;
+    padding-right: 0;
+  }
+  html[lang] .page-footer {
+    gap: 12px;
+  }
+  html[lang] .privacy-consent-dialog {
+    padding: 23px 20px;
+  }
+  html[lang] .privacy-consent-dialog h1 {
+    font-size: 24px;
+    line-height: 1.8;
+  }
+  html[lang] .consent-brand strong {
+    font-size: 21px;
+  }
+  html[lang] .consent-top {
+    gap: 13px;
+  }
+  html[lang] .locale-switch > button {
+    font-size: 13px;
+    padding: 8px 11px;
+    min-height: 44px;
+  }
+  html[lang] .consent-tools > .icon-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  html[lang] .privacy-detail h3 {
+    font-size: 15px;
+  }
+  html[lang] .privacy-detail p,
+  html[lang] .consent-description,
+  html[lang] .consent-checkbox {
+    font-size: 14px;
+  }
+  html[lang] .consent-actions > button {
+    font-size: 14px;
+    min-height: 48px;
+  }
+  html[lang] .consent-footer {
+    font-size: 12px;
+  }
+  html[lang] .document-summary strong {
+    font-size: 14px;
+  }
+  html[lang] .nrc-upload-slots {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  html[lang] .nrc-upload-slots .document-item {
+    flex-direction: row;
+  }
+  html[lang] .nrc-upload-slots .document-item > img {
+    width: 78px;
+    height: 92px;
+  }
+  html[lang] .theme-options > button {
+    font-size: 13px;
+  }
+  html[lang] .preview-bottom {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 360px) {
+  html[lang] .topbar {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  html[lang] .brand.compact strong {
+    font-size: 16px;
+  }
+  html[lang] .download-button {
+    font-size: 11px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  html[lang] .form-card {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  html[lang] .page-content {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  html[lang] .settings-button {
+    min-width: 38px;
+  }
+}
+@media print {
+  html[lang] .main-content {
+    margin-left: 0 !important;
+    width: auto !important;
+  }
+}
