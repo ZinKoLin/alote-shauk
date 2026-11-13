@@ -2,6 +2,8 @@
 
 နောက်ဆုံး update: **2026-11-13 (Asia/Rangoon)**။ အခြား AI က ဒီဖိုင်နှင့် root `AGENTS.md` ကို ဖတ်ပြီး ဆက်ရေးနိုင်ရန် ရေးထားသည်။ Secrets၊ user CV ဒေတာ၊ NRC နံပါတ်အစစ်၊ မူရင်းဓာတ်ပုံနှင့် login code မပါဝင်ပါ။
 
+တခြား AI ထံပေးရန် အသင့်သုံး prompt: [AI_CONTINUATION_PROMPT.md](AI_CONTINUATION_PROMPT.md)။ ဖိုင်၏ နောက်ဆုံး task placeholder ကို မိမိလုပ်ချင်သောအလုပ်ဖြင့် အစားထိုးပြီး ကူးပေးနိုင်သည်။ README နှင့် Operations မှလည်း ဒီ prompt ကို ချိတ်ထားသည်။
+
 ## 1. Product နှင့် ရည်ရွယ်ချက်
 
 **အလုပ်လျှောက်** သည် မြန်မာ / English CV ကို browser ထဲတွင် ဖြည့်၊ တိုက်ရိုက်နမူနာကြည့်၊ A4 PDF ထုတ်နိုင်သည့် website ဖြစ်သည်။ အသုံးပြုသူပေးထားသော မြန်မာ CV နှင့် ဘောင်ပါအလုပ်လျှောက်လွှာနမူနာများကို အခြေခံထားသည်။ Profile photo၊ မှတ်ပုံတင်နှစ်ဖက်၊ အိမ်ထောင်စုစာရင်း၊ ဘွဲ့နှင့်အောင်လက်မှတ်များကို တစ်ဖိုင်တည်းတွဲထုတ်နိုင်သည်။
@@ -127,6 +129,7 @@ Remove-Item Env:CV_TEST_PREVIEW -ErrorAction SilentlyContinue
 - 2026-11-08 implementation session: full Playwright suite **23 passed**၊ final consent theme screenshot check နှင့် desktop/mobile rendering check passed။ Production public URL တွင် language/draft/attachment preservation နှင့် responsive tests **2 passed**။
 - 2026-11-13 documentation session: `npm run build` passed; PowerShell တွင် `CV_TEST_PREVIEW=1` ဖြင့် `npm test` run ပြီး **23 passed (48.7s)**။ Documentation ဖိုင် ၆ ခု၊ relative Markdown links ၁၅ ခုနှင့် documented core module/config/license paths ကို စစ်ပြီး credential pattern မတွေ့ပါ။ Runtime / storage / tests / dependencies source မပြောင်းကြောင်း Git diff ဖြင့် အတည်ပြုထားသည်။
 - 2026-11-13 live verification: public URL သည် HTTP 200 နှင့် မှန်ကန်သော app title ကို ပြန်ပေးသည်။ Scoped Vercel CLI API က ယခင် production deployment `READY`၊ domain နှစ်ခု verified နှင့် Git link မရှိခြင်းကို ပြသည်။ ဒီ documentation update အတွက် deploy မလုပ်ပါ။
-- User က လက်ရှိတောင်းထားသော feature/bug fix အလုပ်ကျန် မရှိပါ။ ဒီ request သည် documentation နှင့် အမြဲ update လုပ်မည့် working rules သိမ်းရန် ဖြစ်သည်။
+- 2026-11-13 နောက်ဆက်တွဲ documentation-only change: user ထံပေးခဲ့သော continuation prompt ကို `docs/AI_CONTINUATION_PROMPT.md` အဖြစ် သိမ်းပြီး README / Operations links နှင့် changelog ကို update လုပ်သည်။ Prompt ဖိုင်အပါအဝင် Markdown links၊ formatting၊ source မပြောင်းခြင်းနှင့် Git diff ကို စစ်သည်။ ဒီ prompt သိမ်းသည့်အလုပ်အတွက် build/test suite ကို ပြန်မစစ်ပါ; အပေါ်က **23 passed** သည် အစောပိုင်း documentation session ၏ရလဒ်ဖြစ်သည်။
+- User က လက်ရှိတောင်းထားသော feature/bug fix အလုပ်ကျန် မရှိပါ။ Documentation၊ အမြဲ update လုပ်မည့် working rules နှင့် တခြား AI ဆက်ရေးရန် prompt ကို repository ထဲ သိမ်းထားသည်။ ဒီနောက်ဆက်တွဲပြောင်းလဲမှုအတွက် Production deploy မလုပ်ပါ။
 - User CV migration၊ server backend၊ OCR၊ cloud sync၊ account system၊ GitHub auto deploy၊ documentation automation တို့သည် အကောင်အထည်ဖော်ထားသော feature မဟုတ်ပါ။ တောင်းဆိုချက်အသစ်မရှိဘဲ backlog task အဖြစ် ယူမလုပ်ရ။
 - နောက်အလုပ်စချိန် read docs → inspect actual state → implement preserving data → relevant checks → update docs → authorized Git operations ဟူသောအစဉ်ကို သုံးပါ။

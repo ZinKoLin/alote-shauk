@@ -133,4 +133,6 @@ Deploy လုပ်ပြီး target၊ deployment ID၊ public URLs၊ verifi
 
 ## 7. နောက် AI ထံ လွှဲရာတွင်
 
+အသင့်သုံး prompt ကို [AI_CONTINUATION_PROMPT.md](AI_CONTINUATION_PROMPT.md) မှ ကူးပြီး နောက်ဆုံး task placeholder နေရာတွင် ဆက်လုပ်ချင်သောအလုပ်ကို အစားထိုးရေးပါ။ Project behavior / URLs / handoff rules ပြောင်းလျှင် prompt ကိုပါ update လုပ်ပါ။
+
 ဒီ runbook၊ `PROJECT_HANDOFF.md`၊ `ARCHITECTURE.md` နှင့် `CHANGELOG.md` ကို source နဲ့အတူ ပေးပါ။ Files/commands/live state ပြောင်းလျှင် update လုပ်ပါ။ Pending user request၊ incomplete checks၊ exact blocker နှင့် deploy လုပ်ပြီး/မပြီးကို ထင်ရှားစွာရေးပါ။ Credentials သို့မဟုတ် user CV ကို လက်လွှဲမှတ်တမ်းထဲ မထည့်ပါနှင့်။

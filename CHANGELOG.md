@@ -2,6 +2,15 @@
 
 ဒီဖိုင်ကို အလုပ်တစ်ခုပြီးတိုင်း update လုပ်ရမည်။ ရက်စွဲသည် **Asia/Rangoon** ကိုသုံးသည်။ အသေးစိတ်အမြဲလက်ရှိအခြေအနေအတွက် [Project handoff](docs/PROJECT_HANDOFF.md) ကို ကြည့်ပါ။
 
+## 2026-11-13 — တခြား AI အတွက် အသင့်သုံး prompt ဖိုင်
+
+- **Request:** ယခင်ပေးထားသော continuation prompt ကို project ထဲ ဖိုင်အဖြစ် သိမ်းပြီး GitHub ပေါ်တင်ရန်။
+- `docs/AI_CONTINUATION_PROMPT.md` တွင် မူရင်း prompt၊ repository/website၊ read-first docs၊ data/privacy safeguards၊ verification/docs-update rules နှင့် အစားထိုးဖြည့်ရန် task placeholder ကို သိမ်းသည်။
+- README နှင့် Operations မှ prompt ဖိုင်သို့ link ချိတ်ပြီး Project handoff ကို update လုပ်သည်။ `docs/` သည် ရှိပြီးသား `.vercelignore` ထဲပါသောကြောင့် deploy source upload ထဲ မပါပါ။
+- **Verification:** Markdown formatting၊ relative links၊ source မပြောင်းခြင်း၊ credential exclusions နှင့် Git diff whitespace ကို စစ်သည်။ Documentation-only အလုပ်ဖြစ်သဖြင့် build / app tests ကို ပြန်မစစ်ပါ။ အောက်က **23 passed** သည် အရင် session ၏ရလဒ်ဖြစ်သည်။
+- **Data compatibility:** app code၊ storage keys/schema၊ user draft/photo/attachments နှင့် dependencies မပြောင်း။
+- **Git / deployment:** prompt နှင့် သက်ဆိုင်ရာ docs ကို တူညီသော commit ဖြင့် GitHub `main` သို့တင်သည်။ Production deploy မလုပ်ပါ။
+
 ## 2026-11-13 — AI handoff နှင့် documentation update စည်းကမ်း
 
 **တောင်းဆိုချက်:** `AGENTS.md` နှင့် project တစ်ခုလုံး၏ အသေးစိတ်မှတ်တမ်းကို သိမ်းပြီး တခြား AI က ဆက်ရေးနိုင်ရန်၊ ပြင်ပြီးတိုင်း အမြဲ update လုပ်ရန်။

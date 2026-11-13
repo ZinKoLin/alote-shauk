@@ -6,6 +6,8 @@ Website: https://alote-cv.vercel.app · Public source: https://github.com/ZinKoL
 
 ## တခြား AI / developer က ဆက်ရေးရန်
 
+တခြား AI ထံ ကူးပေးရန် အသင့်သုံး prompt ကို [AI_CONTINUATION_PROMPT.md](docs/AI_CONTINUATION_PROMPT.md) တွင် သိမ်းထားသည်။ နောက်ဆုံးနေရာ၌ ဆက်လုပ်ချင်သောအလုပ်ကို အစားထိုးရေးပါ။
+
 ပထမဦးစွာ [AGENTS.md](AGENTS.md) နှင့် [Project လက်လွှဲမှတ်တမ်း](docs/PROJECT_HANDOFF.md) ကို ဖတ်ပါ။ [Architecture](docs/ARCHITECTURE.md) တွင် data/schema/rendering အသေးစိတ်၊ [Operations](docs/OPERATIONS.md) တွင် setup/tests/Git/Vercel နည်းလမ်း၊ [CHANGELOG](CHANGELOG.md) တွင် ပြင်ဆင်မှုသမိုင်း ရှိသည်။
 
 ပြင်ပြီးတိုင်း သက်ဆိုင်ရာမှတ်တမ်းကို source နှင့်အတူ update လုပ်ရမည်။ ရှိပြီးသား CV ဒေတာ၊ ဓာတ်ပုံနှင့် attachments ကို ထိန်းသိမ်းရမည်။ Git push နှင့် Production deploy ကို သီးခြားမှတ်တမ်းတင်ပါ။
