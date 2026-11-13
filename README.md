@@ -2,6 +2,14 @@
 
 ပေးထားသည့်နမူနာများကို အခြေခံထားသော မြန်မာ / English CV website ဖြစ်သည်။ React၊ TypeScript နှင့် Vite ကို အသုံးပြုပြီး backend၊ server database နှင့် API key မလိုပါ။ Developed by **ZinKoLyn**။
 
+Website: https://alote-cv.vercel.app · Public source: https://github.com/ZinKoLin/alote-shauk
+
+## တခြား AI / developer က ဆက်ရေးရန်
+
+ပထမဦးစွာ [AGENTS.md](AGENTS.md) နှင့် [Project လက်လွှဲမှတ်တမ်း](docs/PROJECT_HANDOFF.md) ကို ဖတ်ပါ။ [Architecture](docs/ARCHITECTURE.md) တွင် data/schema/rendering အသေးစိတ်၊ [Operations](docs/OPERATIONS.md) တွင် setup/tests/Git/Vercel နည်းလမ်း၊ [CHANGELOG](CHANGELOG.md) တွင် ပြင်ဆင်မှုသမိုင်း ရှိသည်။
+
+ပြင်ပြီးတိုင်း သက်ဆိုင်ရာမှတ်တမ်းကို source နှင့်အတူ update လုပ်ရမည်။ ရှိပြီးသား CV ဒေတာ၊ ဓာတ်ပုံနှင့် attachments ကို ထိန်းသိမ်းရမည်။ Git push နှင့် Production deploy ကို သီးခြားမှတ်တမ်းတင်ပါ။
+
 ## ပါဝင်သည့်လုပ်ဆောင်ချက်များ
 
 - ဖောင်ဖြည့်ခြင်းကို အဓိကထားသည့် ရိုးရှင်းသောအပြင်အဆင်။ ထပ်နေသောအလှဆင်ခေါင်းစဉ်နှင့်စာသားများကို လျှော့ပြီး အလင်း/အမှောင် နှစ်မျိုးလုံးတွင် ကြားနေအရောင်များ၊ ရှင်းလင်းသောခလုတ်နှင့် ဖတ်ရလွယ်သောစာလုံးများကို သုံးထားသည်။ CV စာရွက်နှင့် PDF ပုံစံကို မပြောင်းပါ။
@@ -78,7 +86,7 @@ Project ကို မိမိ GitHub repository သို့တင်ပြီ�
 | Install Command       | `npm ci`        |
 | Build Command         | `npm run build` |
 | Output Directory      | `dist`          |
-| Environment Variables | မလိုပါ          |
+| Environment Variables | မလိုပါ            |
 
 Official deployment guide: https://vite.dev/guide/static-deploy.html#vercel
 

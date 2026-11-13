@@ -11,3 +11,6 @@ tests/
 playwright.config.ts
 *.tsbuildinfo
 dist/
+AGENTS.md
+CHANGELOG.md
+docs/
